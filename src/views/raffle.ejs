@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Raffle</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container raffle-container">
+        <h1 class="raffle-title">🚗 Car Raffle Event 🚗</h1>
+        <p class="raffle-description">Browse our collection of raffle items below:</p>
+        <div class="raffle-grid">
+            <% raffleItems.forEach(item => { %>
+                <div class="raffle-item">
+                    <img src="<%= item.imageUrl %>" alt="<%= item.title %>">
+                    <div class="raffle-item-content">
+                        <h3 class="raffle-item-title"><%= item.title %></h3>
+                        <p class="raffle-item-price">R<%= item.price %></p>
+                        <a href="/raffle/buy/<%= item.id %>" class="raffle-item-btn">Enter Raffle</a>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+    <script>
+        const raffleEndTime = '<%= raffleEndTime %>'; // Pass the raffle end time from the server
+        startCountdown(new Date(raffleEndTime).getTime() / 1000); // Initialize countdown in seconds
+    </script>
+</body>
+</html>

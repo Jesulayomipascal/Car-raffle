@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Raffles</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="raffles.html">Ongoing Raffles</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count" class="cart-icon">0</span></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="winners.html">Previous Winners</a></li>
+            </ul>
+        </nav>
+        <h1>Ongoing Raffles</h1>
+    </header>
+    <main>
+        <section id="raffles-list">
+            <h2>Current Raffles</h2>
+            <div class="raffle-grid">
+                <div class="raffle-item">
+                    <img src="Ford fiesta.jpg" alt="Ford Fiesta">
+                    <div class="raffle-item-content">
+                        <h3 class="raffle-item-title">Ford Fiesta</h3>
+                        <p class="raffle-item-price">Ticket Price: R100</p>
+                        <input type="number" class="raffle-item-quantity" min="1" placeholder="Quantity">
+                        <button class="raffle-item-btn">Buy Ticket</button>
+                    </div>
+                </div>
+                <div class="raffle-item">
+                    <img src="Car image.jpg" alt="Tesla Model 3">
+                    <div class="raffle-item-content">
+                        <h3 class="raffle-item-title">Tesla Model 3</h3>
+                        <p class="raffle-item-price">Ticket Price: R200</p>
+                        <input type="number" class="raffle-item-quantity" min="1" placeholder="Quantity">
+                        <button class="raffle-item-btn">Buy Ticket</button>
+                    </div>
+                </div>
+                <div class="raffle-item">
+                    <img src="Car image2.jpg" alt="BMW X5">
+                    <div class="raffle-item-content">
+                        <h3 class="raffle-item-title">BMW X5</h3>
+                        <p class="raffle-item-price">Ticket Price: R300</p>
+                        <input type="number" class="raffle-item-quantity" min="1" placeholder="Quantity">
+                        <button class="raffle-item-btn">Buy Ticket</button>
+                    </div>
+                </div>
+                <!-- Add more cars as needed -->
+            </div>
+        </section>
+    </main>
+    <script src="scripts/raffles.js"></script>
+</body>
+</html>
